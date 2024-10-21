@@ -3,7 +3,7 @@ import data from "../data.json" with { type: "json" };
 
 type RouteParams = { params: { dinosaur: string } };
 
-export const GET = (request: NextRequest, context: RouteParams) => {
+export const GET = (_request: NextRequest, context: RouteParams) => {
   if (!context?.params?.dinosaur) {
     return Response.json("No dinosaur name provided.");
   }

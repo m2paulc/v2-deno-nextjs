@@ -1,3 +1,3 @@
 export async function GET() {
-	return Response.json("Welcome to the dinosaur API");
+  return await Response.json("Welcome to the dinosaur API");
 }
